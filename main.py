@@ -21,8 +21,6 @@ header = st.container()
 header.title('Welcome to Starbucks Rating Sentiment Project')
 header.text('Add any text you want !')
 
-st.subheader('Ratings vs Customers')
-
 #st.title('Here we will go throght basic EDA'
 data = pd.read_csv('reviews_data.csv')
 review_dist = pd.DataFrame(data["Rating"].value_counts())
